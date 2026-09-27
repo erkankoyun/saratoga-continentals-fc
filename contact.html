@@ -146,8 +146,13 @@
           </div>
         </div>
 
-        <form class="club-contact-form" action="mailto:info@saratogacontinentalsfc.com" method="post" enctype="text/plain">
-          <div class="club-contact-form__head">
+        <form class="club-contact-form" action="https://formsubmit.co/info@saratogacontinentalsfc.com" method="POST">
+          
+          <input type="hidden" name="_subject" value="New SCFC Contact Form Submission">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://saratogacontinentalsfc.com/thanks.html">
+          <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="club-contact-form__head">
             <span>CONTACT SCFC</span>
             <strong>GENERAL INQUIRY</strong>
           </div>
@@ -166,7 +171,7 @@
           <div class="form-grid form-grid--2">
             <label>
               <span>Email *</span>
-              <input type="email" name="Email" autocomplete="email" required>
+              <input type="email" name="email" autocomplete="email" required>
             </label>
             <label>
               <span>Phone</span>
@@ -199,8 +204,8 @@
             <span>I confirm that the information provided may be used by Saratoga Continentals FC to respond to this inquiry.</span>
           </label>
 
-          <button class="btn btn--primary club-contact-form__submit" type="submit">Send by Email</button>
-          <p class="club-contact-form__note">Submitting opens your default email application. A direct web-form service can be connected later without redesigning this page.</p>
+          <button class="btn btn--primary club-contact-form__submit" type="submit">Send Message</button>
+          <p class="club-contact-form__note">Your message will be sent directly to Saratoga Continentals FC. The first submission requires one-time email verification by the club.</p>
         </form>
       </div>
     </section>
