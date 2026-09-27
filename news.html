@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>News | Saratoga Continentals FC</title>
-  <meta name="description" content="Read official Saratoga Continentals FC news, player-development updates and community announcements.">
+  <meta name="description" content="Official Saratoga Continentals FC news, club announcements, player-development updates and community stories.">
   <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="News | Saratoga Continentals FC">
+  <meta property="og:description" content="Club news, development updates and community announcements.">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -34,13 +36,12 @@
         <span class="sr-only">Open navigation</span>
       </button>
 
-
       <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
         <a href="club.html">Club</a>
         <a href="teams.html">Teams</a>
         <a href="schedule.html">Schedule</a>
         <a href="development.html">Player Development</a>
-        <a href="news.html">News</a>
+        <a class="nav-current" href="news.html">News</a>
         <a href="contact.html">Contact</a>
         <a class="nav-cta" href="tryouts.html">Join / Tryouts</a>
       </nav>
@@ -48,45 +49,244 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-glow hero-glow--one"></div>
-      <div class="hero-glow hero-glow--two"></div>
-      <div class="wrap hero__inner">
-        <div class="hero__copy">
-          <p class="eyebrow">LATEST</p>
-          <h1>Club news and announcements.</h1>
-          <p class="hero__lead">Read official Saratoga Continentals FC news, player-development updates and community announcements.</p>
+    <section class="news-page-hero">
+      <div class="news-page-hero__grid" aria-hidden="true"></div>
+      <div class="wrap news-page-hero__inner">
+        <div class="news-page-hero__copy">
+          <p class="eyebrow">LATEST FROM THE CLUB</p>
+          <h1>News. Stories.<br><span>The next chapter.</span></h1>
+          <p>Follow official Saratoga Continentals FC announcements, player-development updates, team news and community stories.</p>
+          <div class="news-page-hero__actions">
+            <a class="btn btn--primary" href="#latest-news">Latest News</a>
+            <a class="btn btn--hero-light" href="contact.html">Contact the Club</a>
+          </div>
         </div>
-        <div class="hero__crest-wrap" aria-hidden="true">
-          <div class="crest-halo"></div>
-          <img class="hero__crest" src="assets/logo.svg" alt="">
+
+        <a class="news-page-hero__feature" href="#featured-story">
+          <span class="news-page-hero__feature-badge">FEATURED</span>
+          <div class="news-page-hero__feature-art">
+            <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+            <strong>SCFC</strong>
+          </div>
+          <div class="news-page-hero__feature-copy">
+            <span>CLUB • 2026</span>
+            <h2>Saratoga Continentals FC is established</h2>
+            <p>A new football identity begins in Saratoga, New York.</p>
+            <b>Read Story ↓</b>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="news-categories">
+      <div class="wrap news-categories__inner">
+        <span>EXPLORE</span>
+        <a href="#latest-news">All News</a>
+        <a href="#club-news">Club</a>
+        <a href="#development-news">Development</a>
+        <a href="#community-news">Community</a>
+        <a href="#match-news">Matches</a>
+      </div>
+    </section>
+
+    <section class="featured-story" id="featured-story">
+      <div class="wrap featured-story__grid">
+        <div class="featured-story__visual">
+          <div class="featured-story__visual-frame">
+            <span>EST. 2026</span>
+            <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+            <strong>THE CONTINENTALS</strong>
+          </div>
+        </div>
+
+        <article class="featured-story__copy">
+          <p class="eyebrow">FEATURED STORY</p>
+          <span class="featured-story__meta">CLUB • 2026</span>
+          <h2>Saratoga Continentals FC is established</h2>
+          <p class="featured-story__lead">A new club identity is taking shape in Saratoga, New York, with player development, competition and community at the center of the project.</p>
+          <p>The club was established in 2026 with the goal of creating a football structure that can grow responsibly over time — from individual training and first-team competition to future youth programming and local partnerships.</p>
+          <div class="featured-story__links">
+            <a href="club.html">Learn About the Club →</a>
+            <a href="tryouts.html">Join / Tryouts →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="news-index" id="latest-news">
+      <div class="wrap">
+        <div class="news-index__heading">
+          <div>
+            <p class="eyebrow">LATEST NEWS</p>
+            <h2>From around the club.</h2>
+          </div>
+          <p>This page is structured so each future story can later link to its own dedicated article page.</p>
+        </div>
+
+        <div class="news-index__grid">
+          <article class="news-story news-story--club" id="club-news">
+            <a href="#featured-story" class="news-story__visual">
+              <span class="news-story__tag">CLUB</span>
+              <img src="assets/logo.svg" alt="">
+              <strong>SCFC</strong>
+            </a>
+            <div class="news-story__body">
+              <span>2026 • CLUB</span>
+              <h3>Saratoga Continentals FC is established</h3>
+              <p>A new football identity begins in Saratoga, New York.</p>
+              <a href="#featured-story">Read Story →</a>
+            </div>
+          </article>
+
+          <article class="news-story news-story--development" id="development-news">
+            <a href="development.html" class="news-story__visual news-story__visual--field">
+              <span class="news-story__tag">DEVELOPMENT</span>
+            </a>
+            <div class="news-story__body">
+              <span>PLAYER DEVELOPMENT</span>
+              <h3>Private training program launching</h3>
+              <p>1-on-1, position-specific and small-group development for local players.</p>
+              <a href="development.html">View Programs →</a>
+            </div>
+          </article>
+
+          <article class="news-story news-story--community" id="community-news">
+            <a href="sponsors.html" class="news-story__visual news-story__visual--partner">
+              <span class="news-story__tag">COMMUNITY</span>
+              <strong>PARTNERS</strong>
+            </a>
+            <div class="news-story__body">
+              <span>COMMUNITY</span>
+              <h3>Founding partners wanted</h3>
+              <p>SCFC is building relationships with businesses and organizations across Saratoga County.</p>
+              <a href="sponsors.html">Partnership Opportunities →</a>
+            </div>
+          </article>
+
+          <article class="news-story news-story--match" id="match-news">
+            <a href="schedule.html" class="news-story__visual news-story__visual--match">
+              <span class="news-story__tag">MATCHES</span>
+              <div class="news-story__match-mark"><b>SCFC</b><i>VS</i><b>?</b></div>
+            </a>
+            <div class="news-story__body">
+              <span>2027 SEASON</span>
+              <h3>First competitive schedule in formation</h3>
+              <p>Fixtures will be published as league placement and competition details are confirmed.</p>
+              <a href="schedule.html">View Match Center →</a>
+            </div>
+          </article>
+
+          <article class="news-story news-story--team">
+            <a href="teams.html" class="news-story__visual news-story__visual--team">
+              <span class="news-story__tag">TEAMS</span>
+              <div class="news-story__team-mark">XI</div>
+            </a>
+            <div class="news-story__body">
+              <span>FIRST TEAM</span>
+              <h3>First-team player interest is open</h3>
+              <p>Players can register interest while the club prepares its first competitive roster.</p>
+              <a href="tryouts.html">Register Interest →</a>
+            </div>
+          </article>
+
+          <article class="news-story news-story--future">
+            <div class="news-story__visual news-story__visual--future">
+              <span class="news-story__tag">MORE SOON</span>
+              <strong>+</strong>
+            </div>
+            <div class="news-story__body">
+              <span>CLUB UPDATES</span>
+              <h3>More stories are coming</h3>
+              <p>New announcements, team updates and community stories will be added as the club develops.</p>
+              <a href="contact.html">Contact the Club →</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="news-grid">
-          <article class="news-card"><div class="news-card__visual news-card__visual--crest"><img src="assets/logo.svg" alt=""></div><div class="news-card__body"><span>CLUB • 2026</span><h3>Saratoga Continentals FC is established</h3><p>A new football identity begins in Saratoga, New York.</p></div></article>
-          <article class="news-card"><div class="news-card__visual news-card__visual--field"></div><div class="news-card__body"><span>PLAYER DEVELOPMENT</span><h3>Private training program launching</h3><p>1-on-1 and position-specific development for local players.</p></div></article>
-          <article class="news-card"><div class="news-card__visual news-card__visual--stripe"></div><div class="news-card__body"><span>COMMUNITY</span><h3>Local partners wanted</h3><p>We are building relationships with businesses and organizations across Saratoga County.</p></div></article>
+    <section class="news-desk">
+      <div class="wrap news-desk__grid">
+        <div>
+          <p class="eyebrow">CLUB MEDIA</p>
+          <h2>Have a media or community inquiry?</h2>
+          <p>For official club information, community stories, partnership announcements or future media requests, contact Saratoga Continentals FC directly.</p>
+        </div>
+        <div class="news-desk__panel">
+          <span>OFFICIAL CONTACT</span>
+          <a href="mailto:info@saratogacontinentalsfc.com">info@saratogacontinentalsfc.com</a>
+          <a href="contact.html">Contact Page →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="club-cta">
+      <div class="wrap club-cta__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">FOLLOW THE CLUB</p>
+          <h2>Be there from the beginning.</h2>
+          <p>Follow Saratoga Continentals FC as the first teams, fixtures, development programs and partnerships take shape.</p>
+        </div>
+        <div class="club-cta__actions">
+          <a class="btn btn--light" href="tryouts.html">Join / Tryouts</a>
+          <a class="club-cta__link" href="contact.html">Contact the Club →</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap site-footer__grid">
-      <div class="footer-brand">
-        <img src="assets/logo.svg" alt="" width="64" height="76">
-        <div>
-          <strong>SARATOGA CONTINENTALS FC</strong>
-          <span>THE CONTINENTALS • EST. 2026</span>
+  <footer class="mega-footer">
+    <div class="wrap">
+      <div class="mega-footer__top">
+        <a class="mega-footer__brand" href="index.html" aria-label="Saratoga Continentals FC home">
+          <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+          <div>
+            <strong>SARATOGA</strong>
+            <span>CONTINENTALS FC</span>
+            <small>THE CONTINENTALS • EST. 2026</small>
+          </div>
+        </a>
+
+        <div class="mega-footer__social">
+          <span>FOLLOW THE CLUB</span>
+          <div>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+          </div>
         </div>
       </div>
-      <p>© <span id="year"></span> Saratoga Continentals FC. All rights reserved.</p>
-      <a href="#top">Back to top ↑</a>
+
+      <div class="mega-footer__links">
+        <div>
+          <span>CLUB</span>
+          <a href="club.html">About the Club</a>
+          <a href="teams.html">Teams</a>
+          <a href="schedule.html">Schedule</a>
+        </div>
+        <div>
+          <span>DEVELOPMENT</span>
+          <a href="development.html">Player Development</a>
+          <a href="tryouts.html">Join / Tryouts</a>
+          <a href="news.html">Club News</a>
+        </div>
+        <div>
+          <span>COMMUNITY</span>
+          <a href="sponsors.html">Partners</a>
+          <a href="contact.html">Contact</a>
+          <a href="mailto:info@saratogacontinentalsfc.com">Email the Club</a>
+        </div>
+        <div class="mega-footer__statement">
+          <span>SARATOGA, NEW YORK</span>
+          <strong>History. Pride.<br>Football.</strong>
+        </div>
+      </div>
+
+      <div class="mega-footer__bottom">
+        <p>© <span id="year"></span> Saratoga Continentals FC. All rights reserved.</p>
+        <span>saratogacontinentalsfc.com</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
