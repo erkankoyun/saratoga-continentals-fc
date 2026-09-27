@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Teams | Saratoga Continentals FC</title>
-  <meta name="description" content="Explore current and future Saratoga Continentals FC teams and development pathways.">
+  <meta name="description" content="Explore Saratoga Continentals FC teams, player pathways, first-team plans and future youth development structure.">
   <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Saratoga Continentals FC Teams">
+  <meta property="og:description" content="First Team, Youth Development and future player pathways.">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -34,10 +36,9 @@
         <span class="sr-only">Open navigation</span>
       </button>
 
-
       <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
         <a href="club.html">Club</a>
-        <a href="teams.html">Teams</a>
+        <a class="nav-current" href="teams.html">Teams</a>
         <a href="schedule.html">Schedule</a>
         <a href="development.html">Player Development</a>
         <a href="news.html">News</a>
@@ -48,54 +49,256 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-glow hero-glow--one"></div>
-      <div class="hero-glow hero-glow--two"></div>
-      <div class="wrap hero__inner">
-        <div class="hero__copy">
-          <p class="eyebrow">TEAMS</p>
-          <h1>The teams of Saratoga Continentals FC.</h1>
-          <p class="hero__lead">Explore current and future Saratoga Continentals FC teams and development pathways.</p>
+    <section class="teams-page-hero">
+      <div class="teams-page-hero__grid" aria-hidden="true"></div>
+      <div class="wrap teams-page-hero__inner">
+        <div class="teams-page-hero__copy">
+          <p class="eyebrow">OUR TEAMS</p>
+          <h1>One badge.<br><span>One pathway.</span></h1>
+          <p>We are building Saratoga Continentals FC in stages — beginning with a focused competitive program and expanding toward a complete development pathway.</p>
+          <div class="teams-page-hero__actions">
+            <a class="btn btn--primary" href="tryouts.html">Register Interest</a>
+            <a class="btn btn--hero-light" href="development.html">Player Development</a>
+          </div>
         </div>
-        <div class="hero__crest-wrap" aria-hidden="true">
-          <div class="crest-halo"></div>
-          <img class="hero__crest" src="assets/logo.svg" alt="">
+
+        <div class="teams-page-hero__visual">
+          <div class="teams-page-hero__crest-wrap">
+            <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+            <span>THE CONTINENTALS</span>
+            <small>EST. 2026</small>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="teams-overview">
       <div class="wrap">
-        <div class="section-heading">
-          <div><p class="eyebrow">THE CLUB</p><h2>Built in stages. Built to last.</h2></div>
-          <p class="section-heading__copy">Our competitive structure will expand responsibly as players, coaching resources and local partnerships grow.</p>
+        <div class="teams-overview__heading">
+          <div>
+            <p class="eyebrow">TEAM STRUCTURE</p>
+            <h2>Built in stages. Built to last.</h2>
+          </div>
+          <p>Our team structure will grow responsibly as players, coaches, facilities and competition opportunities develop.</p>
         </div>
-        <div class="team-grid">
-          <article class="team-card team-card--feature">
-            <div><span class="status-pill">FORMING NOW</span><h3>First Team</h3><p>Adult competitive squad representing Saratoga in regional competition.</p></div>
-            <a href="tryouts.html">Register interest →</a>
+
+        <div class="teams-overview__grid">
+          <article class="team-profile team-profile--primary">
+            <div class="team-profile__visual">
+              <span class="team-profile__status">FORMING NOW</span>
+              <img src="assets/logo.svg" alt="">
+              <strong>FIRST TEAM</strong>
+            </div>
+            <div class="team-profile__body">
+              <span>COMPETITIVE PROGRAM</span>
+              <h3>First Team</h3>
+              <p>Adult competitive squad planned to represent Saratoga in regional competition.</p>
+              <ul>
+                <li>Competitive match environment</li>
+                <li>Structured training expectations</li>
+                <li>Player-first development standards</li>
+              </ul>
+              <a href="tryouts.html">Register player interest →</a>
+            </div>
           </article>
-          <article class="team-card">
-            <div><span class="status-pill status-pill--outline">DEVELOPMENT</span><h3>Youth Pathway</h3><p>Future age-group programming focused on technical development and individual progression.</p></div>
-            <a href="contact.html">Get updates →</a>
+
+          <article class="team-profile">
+            <div class="team-profile__visual team-profile__visual--youth">
+              <span class="team-profile__status team-profile__status--light">DEVELOPMENT</span>
+              <div class="team-profile__roundel">SCFC</div>
+              <strong>YOUTH PATHWAY</strong>
+            </div>
+            <div class="team-profile__body">
+              <span>FUTURE PROGRAM</span>
+              <h3>Youth Development</h3>
+              <p>Future age-group programming built around technique, game understanding and individual progression.</p>
+              <ul>
+                <li>Age-appropriate player development</li>
+                <li>Technical and tactical foundations</li>
+                <li>Long-term progression pathway</li>
+              </ul>
+              <a href="development.html">Explore development →</a>
+            </div>
           </article>
+
+          <article class="team-profile">
+            <div class="team-profile__visual team-profile__visual--training">
+              <span class="team-profile__status team-profile__status--light">OPEN</span>
+              <div class="team-profile__training-mark"><span>1</span><i>:</i><span>1</span></div>
+              <strong>PRIVATE TRAINING</strong>
+            </div>
+            <div class="team-profile__body">
+              <span>PLAYER SERVICES</span>
+              <h3>Private Training</h3>
+              <p>Targeted training for players who want focused work beyond regular team sessions.</p>
+              <ul>
+                <li>1-on-1 sessions</li>
+                <li>Position-specific development</li>
+                <li>Small-group training</li>
+              </ul>
+              <a href="development.html">View training options →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-pathway">
+      <div class="wrap">
+        <div class="team-pathway__heading">
+          <div>
+            <p class="eyebrow">PLAYER PATHWAY</p>
+            <h2>A clear route forward.</h2>
+          </div>
+          <p>The pathway is designed so players can enter at different stages and continue progressing as the club structure expands.</p>
+        </div>
+
+        <div class="team-pathway__steps">
+          <article>
+            <span>01</span>
+            <strong>Individual Development</strong>
+            <p>Build technical quality, confidence and position-specific habits.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Small Group</strong>
+            <p>Add pressure, decision-making and realistic game situations.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Team Environment</strong>
+            <p>Train within a structured group and compete around shared standards.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Competitive Football</strong>
+            <p>Represent Saratoga Continentals FC in organized competition.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="roster-preview">
+      <div class="wrap">
+        <div class="roster-preview__heading">
+          <div>
+            <p class="eyebrow">ROSTER</p>
+            <h2>Player profiles coming soon.</h2>
+          </div>
+          <p>Once the first competitive roster is confirmed, this page will expand with player cards, positions, numbers and staff profiles.</p>
+        </div>
+
+        <div class="roster-preview__grid">
+          <article class="roster-card roster-card--placeholder">
+            <div class="roster-card__number">01</div>
+            <div class="roster-card__avatar">GK</div>
+            <span>GOALKEEPER</span>
+            <strong>Player TBA</strong>
+          </article>
+          <article class="roster-card roster-card--placeholder">
+            <div class="roster-card__number">04</div>
+            <div class="roster-card__avatar">DF</div>
+            <span>DEFENDER</span>
+            <strong>Player TBA</strong>
+          </article>
+          <article class="roster-card roster-card--placeholder">
+            <div class="roster-card__number">08</div>
+            <div class="roster-card__avatar">MF</div>
+            <span>MIDFIELDER</span>
+            <strong>Player TBA</strong>
+          </article>
+          <article class="roster-card roster-card--placeholder">
+            <div class="roster-card__number">09</div>
+            <div class="roster-card__avatar">FW</div>
+            <span>FORWARD</span>
+            <strong>Player TBA</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-staff">
+      <div class="wrap team-staff__grid">
+        <div>
+          <p class="eyebrow">COACHING &amp; STAFF</p>
+          <h2>Building the football staff.</h2>
+          <p>Coaching and team staff profiles will be added as appointments are confirmed.</p>
+        </div>
+        <div class="team-staff__panel">
+          <div><span>HEAD COACH</span><strong>To Be Announced</strong></div>
+          <div><span>ASSISTANT COACH</span><strong>To Be Announced</strong></div>
+          <div><span>TEAM OPERATIONS</span><strong>To Be Announced</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="club-cta">
+      <div class="wrap club-cta__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">PLAYER INTEREST</p>
+          <h2>Think you belong in the first team?</h2>
+          <p>Register your interest now and stay informed as tryout and competition details are announced.</p>
+        </div>
+        <div class="club-cta__actions">
+          <a class="btn btn--light" href="tryouts.html">Join / Tryouts</a>
+          <a class="club-cta__link" href="contact.html">Contact the Club →</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap site-footer__grid">
-      <div class="footer-brand">
-        <img src="assets/logo.svg" alt="" width="64" height="76">
-        <div>
-          <strong>SARATOGA CONTINENTALS FC</strong>
-          <span>THE CONTINENTALS • EST. 2026</span>
+  <footer class="mega-footer">
+    <div class="wrap">
+      <div class="mega-footer__top">
+        <a class="mega-footer__brand" href="index.html" aria-label="Saratoga Continentals FC home">
+          <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+          <div>
+            <strong>SARATOGA</strong>
+            <span>CONTINENTALS FC</span>
+            <small>THE CONTINENTALS • EST. 2026</small>
+          </div>
+        </a>
+
+        <div class="mega-footer__social">
+          <span>FOLLOW THE CLUB</span>
+          <div>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+          </div>
         </div>
       </div>
-      <p>© <span id="year"></span> Saratoga Continentals FC. All rights reserved.</p>
-      <a href="#top">Back to top ↑</a>
+
+      <div class="mega-footer__links">
+        <div>
+          <span>CLUB</span>
+          <a href="club.html">About the Club</a>
+          <a href="teams.html">Teams</a>
+          <a href="schedule.html">Schedule</a>
+        </div>
+        <div>
+          <span>DEVELOPMENT</span>
+          <a href="development.html">Player Development</a>
+          <a href="tryouts.html">Join / Tryouts</a>
+          <a href="news.html">Club News</a>
+        </div>
+        <div>
+          <span>COMMUNITY</span>
+          <a href="sponsors.html">Partners</a>
+          <a href="contact.html">Contact</a>
+          <a href="mailto:info@saratogacontinentalsfc.com">Email the Club</a>
+        </div>
+        <div class="mega-footer__statement">
+          <span>SARATOGA, NEW YORK</span>
+          <strong>History. Pride.<br>Football.</strong>
+        </div>
+      </div>
+
+      <div class="mega-footer__bottom">
+        <p>© <span id="year"></span> Saratoga Continentals FC. All rights reserved.</p>
+        <span>saratogacontinentalsfc.com</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
