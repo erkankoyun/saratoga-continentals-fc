@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Schedule | Saratoga Continentals FC</title>
-  <meta name="description" content="Follow Saratoga Continentals FC match, training and event information as the club prepares for competition.">
+  <meta name="description" content="Saratoga Continentals FC fixtures, upcoming matches, results, training and club event information.">
   <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Saratoga Continentals FC Schedule">
+  <meta property="og:description" content="Fixtures, match center, results and club events.">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -34,11 +36,10 @@
         <span class="sr-only">Open navigation</span>
       </button>
 
-
       <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
         <a href="club.html">Club</a>
         <a href="teams.html">Teams</a>
-        <a href="schedule.html">Schedule</a>
+        <a class="nav-current" href="schedule.html">Schedule</a>
         <a href="development.html">Player Development</a>
         <a href="news.html">News</a>
         <a href="contact.html">Contact</a>
@@ -48,53 +49,235 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-glow hero-glow--one"></div>
-      <div class="hero-glow hero-glow--two"></div>
-      <div class="wrap hero__inner">
-        <div class="hero__copy">
-          <p class="eyebrow">MATCHES & EVENTS</p>
-          <h1>Fixtures, training and club events.</h1>
-          <p class="hero__lead">Follow Saratoga Continentals FC match, training and event information as the club prepares for competition.</p>
+    <section class="schedule-page-hero">
+      <div class="schedule-page-hero__grid" aria-hidden="true"></div>
+      <div class="wrap schedule-page-hero__inner">
+        <div class="schedule-page-hero__copy">
+          <p class="eyebrow">MATCHES &amp; EVENTS</p>
+          <h1>Matchday starts here.</h1>
+          <p>Follow Saratoga Continentals FC fixtures, results, training updates and club events as the competitive program takes shape.</p>
+          <div class="schedule-page-hero__actions">
+            <a class="btn btn--primary" href="#fixtures">View Fixtures</a>
+            <a class="btn btn--hero-light" href="tryouts.html">Player Interest</a>
+          </div>
         </div>
-        <div class="hero__crest-wrap" aria-hidden="true">
-          <div class="crest-halo"></div>
-          <img class="hero__crest" src="assets/logo.svg" alt="">
+
+        <div class="schedule-page-hero__panel">
+          <div class="schedule-page-hero__panel-head">
+            <span>NEXT MATCH</span>
+            <strong>2027 SEASON</strong>
+          </div>
+          <div class="schedule-page-hero__fixture">
+            <div class="schedule-club">
+              <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+              <strong>Saratoga<br>Continentals FC</strong>
+            </div>
+            <div class="schedule-page-hero__vs">
+              <small>FIXTURE</small>
+              <b>VS</b>
+              <span>TBA</span>
+            </div>
+            <div class="schedule-club">
+              <div class="schedule-club__unknown">?</div>
+              <strong>Opponent<br>TBA</strong>
+            </div>
+          </div>
+          <div class="schedule-page-hero__panel-foot">
+            <div><span>DATE</span><strong>To Be Announced</strong></div>
+            <div><span>LOCATION</span><strong>Saratoga County, NY</strong></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="match-panel">
-      <div class="wrap">
-        <div class="section-heading section-heading--compact">
-          <div><p class="eyebrow">2027 SEASON</p><h2>First season in formation</h2></div>
-          <span class="muted">Fixtures will be published here.</span>
+    <section class="schedule-toolbar" id="fixtures">
+      <div class="wrap schedule-toolbar__inner">
+        <div>
+          <span>SEASON</span>
+          <strong>2027</strong>
         </div>
-        <article class="match-card">
-          <div class="match-card__label">UPCOMING</div>
-          <div class="match-card__teams">
-            <div class="team-side"><img src="assets/logo.svg" alt="Saratoga Continentals FC crest"><strong>Saratoga Continentals FC</strong><span>Home</span></div>
-            <div class="match-center"><span class="match-center__status">TO BE ANNOUNCED</span><strong>VS</strong><span>Competition details pending</span></div>
-            <div class="team-side team-side--opponent"><div class="opponent-mark">?</div><strong>Opponent</strong><span>TBA</span></div>
+        <div>
+          <span>TEAM</span>
+          <strong>First Team</strong>
+        </div>
+        <div>
+          <span>COMPETITION</span>
+          <strong>To Be Announced</strong>
+        </div>
+        <a href="contact.html">Schedule Updates →</a>
+      </div>
+    </section>
+
+    <section class="fixtures-section">
+      <div class="wrap">
+        <div class="fixtures-section__heading">
+          <div>
+            <p class="eyebrow">UPCOMING FIXTURES</p>
+            <h2>2027 season in formation.</h2>
           </div>
-          <div class="match-card__footer"><span>Saratoga County, New York</span><a href="tryouts.html">Player interest →</a></div>
-        </article>
+          <p>Official fixtures will appear here once league placement and competition dates are confirmed.</p>
+        </div>
+
+        <div class="fixtures-list">
+          <article class="fixture-row fixture-row--featured">
+            <div class="fixture-date">
+              <span>TBA</span>
+              <strong>2027</strong>
+            </div>
+            <div class="fixture-competition">
+              <span>COMPETITIVE PROGRAM</span>
+              <strong>League Match</strong>
+            </div>
+            <div class="fixture-teams">
+              <div><img src="assets/logo.svg" alt=""><strong>Saratoga Continentals FC</strong></div>
+              <span>VS</span>
+              <div><div class="fixture-opponent-mark">?</div><strong>Opponent TBA</strong></div>
+            </div>
+            <div class="fixture-location">
+              <span>VENUE</span>
+              <strong>Saratoga County, NY</strong>
+            </div>
+          </article>
+
+          <article class="fixture-row fixture-row--placeholder">
+            <div class="fixture-date"><span>TBA</span><strong>2027</strong></div>
+            <div class="fixture-competition"><span>COMPETITIVE PROGRAM</span><strong>League Match</strong></div>
+            <div class="fixture-teams fixture-teams--simple"><strong>Opponent &amp; venue to be announced</strong></div>
+            <div class="fixture-location"><span>STATUS</span><strong>Pending</strong></div>
+          </article>
+
+          <article class="fixture-row fixture-row--placeholder">
+            <div class="fixture-date"><span>TBA</span><strong>2027</strong></div>
+            <div class="fixture-competition"><span>COMPETITIVE PROGRAM</span><strong>League Match</strong></div>
+            <div class="fixture-teams fixture-teams--simple"><strong>Opponent &amp; venue to be announced</strong></div>
+            <div class="fixture-location"><span>STATUS</span><strong>Pending</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="wrap">
+        <div class="results-section__heading">
+          <div>
+            <p class="eyebrow">RESULTS</p>
+            <h2>Results will live here.</h2>
+          </div>
+          <p>Once competitive play begins, completed matches will appear in this section with scores, opponents and match details.</p>
+        </div>
+
+        <div class="results-empty">
+          <div class="results-empty__score"><span>—</span><b>:</b><span>—</span></div>
+          <div>
+            <span>NO RESULTS YET</span>
+            <strong>The first result will be added after the club's first official match.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events-section">
+      <div class="wrap">
+        <div class="events-section__heading">
+          <div>
+            <p class="eyebrow">CLUB CALENDAR</p>
+            <h2>More than matchday.</h2>
+          </div>
+          <p>Training, tryouts and club events can be published here alongside the competitive schedule.</p>
+        </div>
+
+        <div class="events-grid">
+          <article class="event-card">
+            <span class="event-card__type">TRYOUTS</span>
+            <strong>Player Identification</strong>
+            <p>Dates and registration details will be announced as the first competitive roster is formed.</p>
+            <a href="tryouts.html">Register Interest →</a>
+          </article>
+
+          <article class="event-card">
+            <span class="event-card__type">TRAINING</span>
+            <strong>Player Development Sessions</strong>
+            <p>Private and small-group training information is available through the development program.</p>
+            <a href="development.html">Development Programs →</a>
+          </article>
+
+          <article class="event-card">
+            <span class="event-card__type">COMMUNITY</span>
+            <strong>Club &amp; Partner Events</strong>
+            <p>Future community and partner events will be listed as the club network grows.</p>
+            <a href="sponsors.html">Partner With SCFC →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="club-cta">
+      <div class="wrap club-cta__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">STAY CONNECTED</p>
+          <h2>Want schedule updates?</h2>
+          <p>Contact the club or register player interest to stay informed as fixtures, tryouts and event dates are announced.</p>
+        </div>
+        <div class="club-cta__actions">
+          <a class="btn btn--light" href="contact.html">Contact the Club</a>
+          <a class="club-cta__link" href="tryouts.html">Player Interest →</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap site-footer__grid">
-      <div class="footer-brand">
-        <img src="assets/logo.svg" alt="" width="64" height="76">
-        <div>
-          <strong>SARATOGA CONTINENTALS FC</strong>
-          <span>THE CONTINENTALS • EST. 2026</span>
+  <footer class="mega-footer">
+    <div class="wrap">
+      <div class="mega-footer__top">
+        <a class="mega-footer__brand" href="index.html" aria-label="Saratoga Continentals FC home">
+          <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+          <div>
+            <strong>SARATOGA</strong>
+            <span>CONTINENTALS FC</span>
+            <small>THE CONTINENTALS • EST. 2026</small>
+          </div>
+        </a>
+
+        <div class="mega-footer__social">
+          <span>FOLLOW THE CLUB</span>
+          <div>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+          </div>
         </div>
       </div>
-      <p>© <span id="year"></span> Saratoga Continentals FC. All rights reserved.</p>
-      <a href="#top">Back to top ↑</a>
+
+      <div class="mega-footer__links">
+        <div>
+          <span>CLUB</span>
+          <a href="club.html">About the Club</a>
+          <a href="teams.html">Teams</a>
+          <a href="schedule.html">Schedule</a>
+        </div>
+        <div>
+          <span>DEVELOPMENT</span>
+          <a href="development.html">Player Development</a>
+          <a href="tryouts.html">Join / Tryouts</a>
+          <a href="news.html">Club News</a>
+        </div>
+        <div>
+          <span>COMMUNITY</span>
+          <a href="sponsors.html">Partners</a>
+          <a href="contact.html">Contact</a>
+          <a href="mailto:info@saratogacontinentalsfc.com">Email the Club</a>
+        </div>
+        <div class="mega-footer__statement">
+          <span>SARATOGA, NEW YORK</span>
+          <strong>History. Pride.<br>Football.</strong>
+        </div>
+      </div>
+
+      <div class="mega-footer__bottom">
+        <p>© <span id="year"></span> Saratoga Continentals FC. All rights reserved.</p>
+        <span>saratogacontinentalsfc.com</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
