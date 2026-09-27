@@ -95,3 +95,51 @@ directForms.forEach(form => {
     }
   });
 });
+
+
+const playerAge = document.getElementById('player-age');
+const submitterRole = document.getElementById('submitter-role');
+const minorFields = document.getElementById('minor-fields');
+const guardianName = document.getElementById('guardian-name');
+const guardianRelationship = document.getElementById('guardian-relationship');
+const under13Attestation = document.getElementById('under13-attestation');
+const under13Confirm = document.getElementById('under13-confirm');
+
+function updateMinorFields() {
+  if (!playerAge || !minorFields) return;
+
+  const age = Number(playerAge.value);
+  const isMinor = Number.isFinite(age) && age > 0 && age < 18;
+  const isUnder13 = Number.isFinite(age) && age > 0 && age < 13;
+
+  minorFields.hidden = !isMinor;
+
+  if (guardianName) guardianName.required = isMinor;
+  if (guardianRelationship) guardianRelationship.required = isMinor;
+
+  if (under13Attestation) under13Attestation.hidden = !isUnder13;
+  if (under13Confirm) {
+    under13Confirm.required = isUnder13;
+    if (!isUnder13) under13Confirm.checked = false;
+  }
+
+  if (submitterRole) {
+    const adultPlayerSelected = submitterRole.value === 'Adult Player';
+    if (isMinor && adultPlayerSelected) {
+      submitterRole.setCustomValidity('A minor player form must be submitted by a parent, legal guardian, or authorized adult.');
+    } else if (!isMinor && submitterRole.value && !adultPlayerSelected) {
+      submitterRole.setCustomValidity('For a player age 18 or older, choose Adult player (18+).');
+    } else {
+      submitterRole.setCustomValidity('');
+    }
+  }
+}
+
+[playerAge, submitterRole].forEach(el => {
+  if (el) {
+    el.addEventListener('input', updateMinorFields);
+    el.addEventListener('change', updateMinorFields);
+  }
+});
+
+updateMinorFields();
