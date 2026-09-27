@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 760 760">
+  <title>Saratoga Continentals FC</title>
+  <desc>Saratoga Continentals FC shield with a mounted Continental rider</desc>
+  <rect width="760" height="760" fill="#F7F7F2"/>
+  <g transform="translate(60 0)">
+    <path d="M320 20L568 108V374C568 548 470 661 320 728C170 661 72 548 72 374V108L320 20Z" fill="#050607"/>
+    <path d="M320 42L546 121V371C546 529 458 632 320 698C182 632 94 529 94 371V121L320 42Z" fill="#F7F7F2"/>
+    <path d="M320 60L529 133V367C529 512 448 607 320 670C192 607 111 512 111 367V133L320 60Z" fill="#C51430"/>
+    <path d="M320 77L513 144V361C513 496 438 585 320 645C202 585 127 496 127 361V144L320 77Z" fill="none" stroke="#07192F" stroke-width="10"/>
+    <path d="M167 467C188 422 221 392 263 376C293 365 326 362 362 368L411 335L450 340L433 363L469 378L456 397L421 393C405 409 395 426 391 448C425 456 459 472 489 495L470 520C443 502 417 491 390 486L391 551L366 558L349 494L308 499L278 567L250 559L263 490C231 479 200 469 172 457L167 467Z" fill="#07192F"/>
+    <path d="M247 411C213 415 187 428 170 448L148 430C173 393 208 374 251 372L247 411Z" fill="#07192F"/>
+    <circle cx="350" cy="258" r="28" fill="#F7F7F2" stroke="#050607" stroke-width="6"/>
+    <path d="M327 247L345 224L377 232L386 246L361 249L351 261L327 247Z" fill="#050607"/>
+    <path d="M333 289C351 273 377 276 392 294L410 353L376 375L345 350L325 316L333 289Z" fill="#D71820" stroke="#050607" stroke-width="6"/>
+    <path d="M349 301L370 311L383 351L362 360L349 301Z" fill="#F7F7F2"/>
+    <path d="M337 317L290 353" fill="none" stroke="#050607" stroke-width="11" stroke-linecap="round"/>
+    <path d="M387 317L427 362" fill="none" stroke="#050607" stroke-width="11" stroke-linecap="round"/>
+    <path d="M370 375L392 430" fill="none" stroke="#F7F7F2" stroke-width="16" stroke-linecap="round"/>
+    <path d="M342 373L319 424" fill="none" stroke="#F7F7F2" stroke-width="16" stroke-linecap="round"/>
+    <path d="M389 426L404 440" fill="none" stroke="#050607" stroke-width="18" stroke-linecap="round"/>
+    <path d="M316 421L304 438" fill="none" stroke="#050607" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="320" cy="596" r="46" fill="#F7F7F2" stroke="#07192F" stroke-width="8"/>
+    <path d="M320 565L340 580L333 604H307L300 580L320 565Z" fill="#07192F"/>
+    <path d="M300 580L280 588L286 612L307 604Z" fill="#07192F"/>
+    <path d="M340 580L360 588L354 612L333 604Z" fill="#07192F"/>
+    <path d="M307 604L294 625L314 637L320 616Z" fill="#07192F"/>
+    <path d="M333 604L346 625L326 637L320 616Z" fill="#07192F"/>
+  </g>
+</svg>
