@@ -3491,3 +3491,21 @@ button{font:inherit}
   .thanks-page h1{font-size:52px}
   .thanks-page__actions .btn{width:100%}
 }
+
+
+/* ===== Step 17b: Form feedback ===== */
+.form-status{
+  min-height:20px;
+  margin-top:18px;
+  color:#1e6f43;
+  font-size:12px;
+  font-weight:800;
+  line-height:1.5;
+}
+.form-status.is-error{color:#b31319}
+.club-contact-form__submit:disabled,
+.player-interest-form__submit:disabled{
+  opacity:.72;
+  cursor:wait;
+  transform:none;
+}
