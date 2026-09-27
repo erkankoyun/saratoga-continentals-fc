@@ -4172,3 +4172,37 @@ button{font:inherit}
 .social-link--instagram:focus-visible svg{
   box-shadow:0 7px 18px rgba(214,36,159,.35);
 }
+
+
+/* ===== YouTube social link ===== */
+.social-link--youtube{
+  background:transparent;
+  box-shadow:none;
+}
+
+.social-link--youtube svg{
+  width:32px;
+  height:32px;
+  padding:6px;
+  flex:0 0 32px;
+  box-sizing:border-box;
+  border-radius:50%;
+  fill:#fff;
+  background:#ff0000;
+  box-shadow:0 5px 14px rgba(255,0,0,.24);
+}
+
+.social-link--youtube:hover,
+.social-link--youtube:focus-visible{
+  color:#fff!important;
+  background:transparent;
+  box-shadow:none;
+  filter:none;
+  transform:translateY(-1px);
+  outline:none;
+}
+
+.social-link--youtube:hover svg,
+.social-link--youtube:focus-visible svg{
+  box-shadow:0 7px 18px rgba(255,0,0,.34);
+}
