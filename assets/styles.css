@@ -4125,3 +4125,15 @@ button{font:inherit}
   white-space:nowrap;
 }
 
+
+
+/* ===== Footer without duplicate brand ===== */
+.mega-footer__top{
+  justify-content:flex-end;
+}
+
+@media (max-width:700px){
+  .mega-footer__top{
+    align-items:flex-start;
+  }
+}
