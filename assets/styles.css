@@ -4211,31 +4211,33 @@ button{font:inherit}
   padding:0;
   box-shadow:none!important;
 }
-.social-link--youtube .youtube-bg{fill:#ff0000}
-.social-link--youtube .youtube-play{fill:#fff}
 .social-link--youtube:hover svg,
 .social-link--youtube:focus-visible svg{
   box-shadow:none!important;
 }
-
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{
-    scroll-behavior:auto!important;
-    transition-duration:.01ms!important;
     animation-duration:.01ms!important;
     animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
   }
 }
 
+/* ===== Keyboard focus + reduced motion ===== */
+a:focus-visible,
+button:focus-visible{
+  outline:3px solid var(--gold);
+  outline-offset:3px;
+}
 
-/* ===== Accessibility: reduced motion ===== */
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{
+    scroll-behavior:auto!important;
+    transition-duration:.01ms!important;
     animation-duration:.01ms!important;
     animation-iteration-count:1!important;
-    transition-duration:.01ms!important;
-    scroll-behavior:auto!important;
   }
 }
