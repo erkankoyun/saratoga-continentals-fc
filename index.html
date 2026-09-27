@@ -54,27 +54,47 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-glow hero-glow--one"></div>
-      <div class="hero-glow hero-glow--two"></div>
-      <div class="wrap hero__inner">
-        <div class="hero__copy">
-          <p class="eyebrow">THE CONTINENTALS</p>
+    <section class="home-hero">
+      <div class="home-hero__backdrop" aria-hidden="true"></div>
+      <div class="home-hero__slash" aria-hidden="true"></div>
+
+      <div class="wrap home-hero__inner">
+        <div class="home-hero__copy">
+          <div class="home-hero__kicker">
+            <span class="home-hero__dot"></span>
+            OFFICIAL CLUB WEBSITE
+          </div>
+
+          <p class="eyebrow">SARATOGA, NEW YORK • EST. 2026</p>
           <h1>Born in Saratoga.<br><span>Built to compete.</span></h1>
-          <p class="hero__lead">A new soccer club with a local identity, a competitive future, and a player-first development philosophy.</p>
-          <div class="hero__actions">
+          <p class="home-hero__lead">A new soccer club with a local identity, a competitive future and a player-first development philosophy.</p>
+
+          <div class="home-hero__actions">
             <a class="btn btn--primary" href="tryouts.html">Join the Club</a>
-            <a class="btn btn--ghost" href="development.html">Player Development</a>
+            <a class="btn btn--hero-light" href="development.html">Player Development</a>
+          </div>
+
+          <div class="home-hero__meta">
+            <div><strong>2026</strong><span>Club Established</span></div>
+            <div><strong>Saratoga</strong><span>New York</span></div>
+            <div><strong>2027</strong><span>First Season</span></div>
           </div>
         </div>
-        <div class="hero__crest-wrap" aria-hidden="true">
-          <div class="crest-halo"></div>
-          <img class="hero__crest" src="assets/logo.svg" alt="">
+
+        <div class="home-hero__visual" aria-label="Saratoga Continentals FC crest">
+          <div class="home-hero__visual-frame">
+            <div class="home-hero__visual-label">THE CONTINENTALS</div>
+            <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+            <div class="home-hero__visual-year">EST. 2026</div>
+          </div>
         </div>
       </div>
-      <div class="hero__rail" aria-hidden="true">
-        <span>HISTORY</span><i></i><span>PRIDE</span><i></i><span>FOOTBALL</span><i></i><span>SARATOGA</span>
+
+      <div class="home-hero__rail">
+        <div class="wrap home-hero__rail-inner">
+          <span>HISTORY</span><i></i><span>PRIDE</span><i></i><span>FOOTBALL</span><i></i><span>SARATOGA</span>
+          <a href="club.html">Discover the Club →</a>
+        </div>
       </div>
     </section>
 
