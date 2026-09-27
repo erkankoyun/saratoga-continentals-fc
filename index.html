@@ -26,14 +26,39 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SportsOrganization",
-    "name": "Saratoga Continentals FC",
-    "url": "https://saratogacontinentalsfc.com/",
-    "logo": "https://saratogacontinentalsfc.com/assets/logo-main-transparent.png",
-    "foundingDate": "2026",
-    "sport": "Soccer",
-    "areaServed": "Saratoga County, New York",
-    "email": "info@saratogacontinentalsfc.com"
+    "@graph": [
+      {
+        "@type": "SportsOrganization",
+        "@id": "https://saratogacontinentalsfc.com/#organization",
+        "name": "Saratoga Continentals FC",
+        "url": "https://saratogacontinentalsfc.com/",
+        "logo": "https://saratogacontinentalsfc.com/assets/logo-main-transparent.png",
+        "foundingDate": "2026",
+        "sport": "Soccer",
+        "areaServed": "Saratoga County, New York",
+        "email": "info@saratogacontinentalsfc.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Saratoga Springs",
+          "addressRegion": "NY",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61595051600448",
+          "https://www.instagram.com/saratogacontinentalsfc/",
+          "https://www.youtube.com/channel/UC0qzxqsYTTxxsQykk-QcQ-w"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://saratogacontinentalsfc.com/#website",
+        "url": "https://saratogacontinentalsfc.com/",
+        "name": "Saratoga Continentals FC",
+        "publisher": {
+          "@id": "https://saratogacontinentalsfc.com/#organization"
+        }
+      }
+    ]
   }
   </script>
 </head>
