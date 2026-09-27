@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap");
 
 :root{
   --navy:#07111f;
@@ -3823,19 +3823,16 @@ button{font:inherit}
 }
 .primary-nav,
 .primary-nav a{
-  font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  font-family:"Inter",Arial,sans-serif;
   text-transform:uppercase;
-  font-stretch:normal;
-  letter-spacing:.04em;
+  letter-spacing:.01em;
   font-weight:700;
   font-size:15px;
 }
 .primary-nav .nav-cta{
   font-weight:800;
-  letter-spacing:.035em;
+  letter-spacing:.01em;
 }
-
-
 
 /* ===== Responsive header + mobile hero refinement ===== */
 @media (max-width:980px){
