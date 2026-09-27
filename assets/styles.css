@@ -2262,3 +2262,460 @@ button{font:inherit}
     gap:8px;
   }
 }
+
+
+/* ===== Step 8: Schedule / Match Center page ===== */
+.schedule-page-hero{
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+  background:
+    radial-gradient(circle at 80% 35%,rgba(215,25,32,.24),transparent 25%),
+    linear-gradient(120deg,#030912 0%,#07111f 52%,#102947 100%);
+}
+.schedule-page-hero__grid{
+  position:absolute;
+  inset:0;
+  opacity:.15;
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:66px 66px;
+}
+.schedule-page-hero__inner{
+  position:relative;
+  z-index:2;
+  min-height:590px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+  gap:60px;
+  padding:70px 0;
+}
+.schedule-page-hero__copy h1{
+  margin:0;
+  font-size:clamp(52px,6.6vw,88px);
+  line-height:.9;
+  letter-spacing:-.06em;
+  text-transform:uppercase;
+}
+.schedule-page-hero__copy>p:not(.eyebrow){
+  max-width:680px;
+  margin:25px 0 0;
+  color:#c0cad7;
+  font-size:18px;
+  line-height:1.7;
+}
+.schedule-page-hero__actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:31px;
+}
+.schedule-page-hero__panel{
+  background:#f4f5f7;
+  color:var(--ink);
+  box-shadow:0 30px 70px rgba(0,0,0,.3);
+  border-top:5px solid var(--red);
+}
+.schedule-page-hero__panel-head{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:17px 20px;
+  color:#fff;
+  background:var(--navy);
+}
+.schedule-page-hero__panel-head span{
+  color:#ff5c62;
+  font-size:9px;
+  font-weight:1000;
+  letter-spacing:.14em;
+}
+.schedule-page-hero__panel-head strong{
+  font-size:10px;
+  letter-spacing:.11em;
+}
+.schedule-page-hero__fixture{
+  display:grid;
+  grid-template-columns:1fr 70px 1fr;
+  gap:8px;
+  align-items:center;
+  padding:32px 18px;
+}
+.schedule-club{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+  text-align:center;
+}
+.schedule-club img{
+  width:90px;
+  height:105px;
+  object-fit:contain;
+}
+.schedule-club strong{
+  font-size:14px;
+  line-height:1.15;
+}
+.schedule-club__unknown{
+  width:82px;
+  height:82px;
+  border-radius:50%;
+  border:2px dashed #b8bec6;
+  display:grid;
+  place-items:center;
+  color:#9da5af;
+  font-size:34px;
+  margin:10px 0 8px;
+}
+.schedule-page-hero__vs{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
+}
+.schedule-page-hero__vs small{
+  color:#9098a2;
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.11em;
+}
+.schedule-page-hero__vs b{
+  font-size:32px;
+  color:var(--navy);
+}
+.schedule-page-hero__vs span{
+  color:var(--red);
+  font-size:9px;
+  font-weight:1000;
+  letter-spacing:.1em;
+}
+.schedule-page-hero__panel-foot{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-top:1px solid #d9dde3;
+}
+.schedule-page-hero__panel-foot div{
+  padding:16px 18px;
+}
+.schedule-page-hero__panel-foot div+div{border-left:1px solid #d9dde3}
+.schedule-page-hero__panel-foot span{
+  display:block;
+  color:#8b949f;
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.12em;
+}
+.schedule-page-hero__panel-foot strong{
+  display:block;
+  margin-top:5px;
+  font-size:11px;
+}
+
+.schedule-toolbar{
+  background:#02060b;
+  color:#fff;
+}
+.schedule-toolbar__inner{
+  min-height:78px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr) auto;
+  align-items:center;
+  gap:0;
+}
+.schedule-toolbar__inner>div{
+  min-height:78px;
+  padding:18px 24px;
+  border-right:1px solid rgba(255,255,255,.1);
+}
+.schedule-toolbar__inner span{
+  display:block;
+  color:#687482;
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.13em;
+}
+.schedule-toolbar__inner strong{
+  display:block;
+  margin-top:5px;
+  font-size:13px;
+}
+.schedule-toolbar__inner>a{
+  padding-left:24px;
+  color:#fff;
+  font-size:10px;
+  font-weight:1000;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.fixtures-section,
+.results-section,
+.events-section{
+  padding:92px 0;
+}
+.fixtures-section{background:#fff}
+.results-section{background:#f3f4f6}
+.events-section{background:#fff}
+.fixtures-section__heading,
+.results-section__heading,
+.events-section__heading{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:50px;
+  margin-bottom:38px;
+}
+.fixtures-section__heading h2,
+.results-section__heading h2,
+.events-section__heading h2{
+  margin:0;
+  font-size:clamp(38px,4.8vw,60px);
+  line-height:.95;
+  letter-spacing:-.05em;
+  text-transform:uppercase;
+}
+.fixtures-section__heading>p,
+.results-section__heading>p,
+.events-section__heading>p{
+  max-width:480px;
+  margin:0;
+  color:#69737e;
+  line-height:1.7;
+}
+
+.fixtures-list{
+  border-top:4px solid var(--red);
+}
+.fixture-row{
+  display:grid;
+  grid-template-columns:110px 1fr 2.1fr 1fr;
+  min-height:135px;
+  align-items:center;
+  border:1px solid var(--line);
+  border-top:0;
+  background:#fff;
+}
+.fixture-row>div{
+  padding:22px;
+}
+.fixture-row>div+div{
+  border-left:1px solid var(--line);
+}
+.fixture-row--featured{
+  box-shadow:0 16px 38px rgba(7,17,31,.08);
+}
+.fixture-date span,
+.fixture-competition span,
+.fixture-location span{
+  display:block;
+  color:#8b949f;
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.13em;
+}
+.fixture-date strong,
+.fixture-competition strong,
+.fixture-location strong{
+  display:block;
+  margin-top:7px;
+  font-size:14px;
+}
+.fixture-teams{
+  display:grid;
+  grid-template-columns:1fr 44px 1fr;
+  align-items:center;
+  gap:10px;
+}
+.fixture-teams>div{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.fixture-teams img{
+  width:50px;
+  height:58px;
+  object-fit:contain;
+}
+.fixture-teams>span{
+  text-align:center;
+  color:var(--red);
+  font-size:12px;
+  font-weight:1000;
+}
+.fixture-teams strong{
+  font-size:13px;
+  line-height:1.2;
+}
+.fixture-opponent-mark{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  border:1px dashed #aeb5be;
+  display:grid;
+  place-items:center;
+  color:#9da5af;
+  font-weight:900;
+}
+.fixture-teams--simple{
+  display:flex;
+}
+.fixture-row--placeholder{
+  color:#7b8590;
+}
+
+.results-empty{
+  min-height:240px;
+  display:grid;
+  grid-template-columns:220px 1fr;
+  align-items:center;
+  border:1px solid #d9dde3;
+  background:#fff;
+}
+.results-empty__score{
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  background:var(--navy);
+  color:#fff;
+  font-size:48px;
+  font-weight:1000;
+}
+.results-empty__score b{
+  color:var(--red);
+}
+.results-empty>div:last-child{
+  padding:38px;
+}
+.results-empty>div:last-child span{
+  display:block;
+  color:var(--red);
+  font-size:9px;
+  font-weight:1000;
+  letter-spacing:.13em;
+}
+.results-empty>div:last-child strong{
+  display:block;
+  margin-top:10px;
+  max-width:650px;
+  font-size:22px;
+  line-height:1.35;
+}
+
+.events-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+.event-card{
+  min-height:280px;
+  padding:28px;
+  display:flex;
+  flex-direction:column;
+  border:1px solid var(--line);
+  background:#fff;
+  transition:.22s ease;
+}
+.event-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 16px 38px rgba(7,17,31,.09);
+}
+.event-card__type{
+  color:var(--red);
+  font-size:9px;
+  font-weight:1000;
+  letter-spacing:.13em;
+}
+.event-card>strong{
+  margin:50px 0 12px;
+  font-size:24px;
+  line-height:1.1;
+  letter-spacing:-.03em;
+}
+.event-card p{
+  margin:0;
+  color:#68727e;
+  font-size:13px;
+  line-height:1.65;
+}
+.event-card a{
+  margin-top:auto;
+  padding-top:24px;
+  color:var(--red);
+  font-size:10px;
+  font-weight:1000;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+@media (max-width:980px){
+  .schedule-page-hero__inner{grid-template-columns:1fr .75fr}
+  .fixture-row{grid-template-columns:90px 1fr 1.7fr}
+  .fixture-location{grid-column:1 / -1;border-left:0!important;border-top:1px solid var(--line)}
+}
+@media (max-width:760px){
+  .schedule-page-hero__inner{
+    grid-template-columns:1fr;
+    padding:70px 0 80px;
+  }
+  .schedule-page-hero__panel{margin-top:12px}
+  .schedule-toolbar__inner{
+    grid-template-columns:1fr 1fr;
+  }
+  .schedule-toolbar__inner>a{
+    grid-column:1 / -1;
+    padding:18px 24px;
+    border-top:1px solid rgba(255,255,255,.1);
+  }
+  .fixtures-section,
+  .results-section,
+  .events-section{padding:72px 0}
+  .fixtures-section__heading,
+  .results-section__heading,
+  .events-section__heading{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:20px;
+  }
+  .fixture-row{
+    grid-template-columns:1fr;
+  }
+  .fixture-row>div+div{
+    border-left:0;
+    border-top:1px solid var(--line);
+  }
+  .fixture-location{grid-column:auto}
+  .results-empty{
+    grid-template-columns:1fr;
+  }
+  .results-empty__score{
+    min-height:150px;
+  }
+  .events-grid{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .schedule-page-hero__copy h1{font-size:48px}
+  .schedule-page-hero__actions .btn{width:100%}
+  .schedule-page-hero__fixture{
+    grid-template-columns:1fr 56px 1fr;
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .schedule-club img{width:72px;height:86px}
+  .schedule-club__unknown{width:66px;height:66px}
+  .schedule-page-hero__panel-foot{grid-template-columns:1fr}
+  .schedule-page-hero__panel-foot div+div{
+    border-left:0;
+    border-top:1px solid #d9dde3;
+  }
+  .schedule-toolbar__inner{grid-template-columns:1fr}
+  .fixture-teams{grid-template-columns:1fr 32px 1fr}
+  .fixture-teams>div{
+    flex-direction:column;
+    text-align:center;
+  }
+}
