@@ -6,6 +6,8 @@
   <title>Player Development | Saratoga Continentals FC</title>
   <meta name="description" content="Private, position-specific, athletic and small-group soccer development for players in the Saratoga area.">
   <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Player Development | Saratoga Continentals FC">
+  <meta property="og:description" content="1-on-1, position-specific, performance and small-group player development.">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -34,12 +36,11 @@
         <span class="sr-only">Open navigation</span>
       </button>
 
-
       <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
         <a href="club.html">Club</a>
         <a href="teams.html">Teams</a>
         <a href="schedule.html">Schedule</a>
-        <a href="development.html">Player Development</a>
+        <a class="nav-current" href="development.html">Player Development</a>
         <a href="news.html">News</a>
         <a href="contact.html">Contact</a>
         <a class="nav-cta" href="tryouts.html">Join / Tryouts</a>
@@ -48,50 +49,290 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-glow hero-glow--one"></div>
-      <div class="hero-glow hero-glow--two"></div>
-      <div class="wrap hero__inner">
-        <div class="hero__copy">
+    <section class="development-page-hero">
+      <div class="development-page-hero__grid" aria-hidden="true"></div>
+      <div class="wrap development-page-hero__inner">
+        <div class="development-page-hero__copy">
           <p class="eyebrow">PLAYER DEVELOPMENT</p>
-          <h1>Train the player, not just the drill.</h1>
-          <p class="hero__lead">Private, position-specific, athletic and small-group soccer development for players in the Saratoga area.</p>
+          <h1>Train the player.<br><span>Not just the drill.</span></h1>
+          <p>Individual development should connect directly to the demands of the game. Our approach combines technical quality, tactical understanding, athletic movement and decision-making.</p>
+          <div class="development-page-hero__actions">
+            <a class="btn btn--primary" href="tryouts.html">Start Training</a>
+            <a class="btn btn--hero-light" href="#programs">View Programs</a>
+          </div>
         </div>
-        <div class="hero__crest-wrap" aria-hidden="true">
-          <div class="crest-halo"></div>
-          <img class="hero__crest" src="assets/logo.svg" alt="">
+
+        <div class="development-page-hero__visual">
+          <div class="development-page-hero__board">
+            <span class="development-page-hero__label">DEVELOPMENT MODEL</span>
+            <div class="development-page-hero__pitch">
+              <span class="development-dot development-dot--1"></span>
+              <span class="development-dot development-dot--2"></span>
+              <span class="development-dot development-dot--3"></span>
+              <span class="development-dot development-dot--4"></span>
+              <span class="development-dot development-dot--5"></span>
+              <div class="development-ball"></div>
+            </div>
+            <div class="development-page-hero__legend">
+              <span>TECHNICAL</span>
+              <span>TACTICAL</span>
+              <span>PHYSICAL</span>
+              <span>MENTAL</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--dark">
+    <section class="development-principles">
       <div class="wrap">
-        <div class="section-heading">
-          <div><p class="eyebrow">DEVELOPMENT PROGRAMS</p><h2>Individual progress comes first.</h2></div>
-          <p class="section-heading__copy">Sessions are designed around age, level, position, strengths and development goals.</p>
+        <div class="development-principles__heading">
+          <div>
+            <p class="eyebrow">OUR APPROACH</p>
+            <h2>Individual progress comes first.</h2>
+          </div>
+          <p>Sessions are designed around the player's age, current level, position, strengths and development goals.</p>
         </div>
-        <div class="program-grid">
-          <article class="program-card"><span class="program-card__num">01</span><h3>1-on-1 Training</h3><p>Individual sessions focused on the player's current level and goals.</p><span class="chip">Private</span></article>
-          <article class="program-card"><span class="program-card__num">02</span><h3>Position-Specific</h3><p>Technical and tactical training based on match demands by position.</p><span class="chip">Technical + Tactical</span></article>
-          <article class="program-card"><span class="program-card__num">03</span><h3>Athletic Development</h3><p>Age-appropriate speed, agility, balance, coordination and functional strength.</p><span class="chip">Performance</span></article>
-          <article class="program-card"><span class="program-card__num">04</span><h3>Small Groups</h3><p>High-repetition training with pressure, decisions and competitive situations.</p><span class="chip">Competitive</span></article>
+
+        <div class="development-principles__grid">
+          <article>
+            <span>01</span>
+            <strong>Assess</strong>
+            <p>Identify the player's current strengths, habits and priorities.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Train</strong>
+            <p>Use focused repetitions with clear technical and tactical objectives.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Apply</strong>
+            <p>Add pressure, movement, decision-making and realistic game context.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Progress</strong>
+            <p>Increase difficulty as the player becomes more consistent and confident.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="development-programs" id="programs">
+      <div class="wrap">
+        <div class="development-programs__heading">
+          <div>
+            <p class="eyebrow">DEVELOPMENT PROGRAMS</p>
+            <h2>Choose the right training environment.</h2>
+          </div>
+          <p>Players can begin with private training, position-specific work, athletic development or small-group sessions.</p>
+        </div>
+
+        <div class="development-programs__grid">
+          <article class="development-program development-program--featured">
+            <div class="development-program__visual development-program__visual--private">
+              <span>01</span>
+              <div class="development-program__ball"></div>
+            </div>
+            <div class="development-program__body">
+              <span>PRIVATE</span>
+              <h3>1-on-1 Training</h3>
+              <p>Focused individual sessions designed around one player's current level and specific development targets.</p>
+              <ul>
+                <li>Ball mastery and first touch</li>
+                <li>Passing and receiving</li>
+                <li>Dribbling and 1v1 actions</li>
+                <li>Finishing and striking</li>
+                <li>Position-specific details</li>
+              </ul>
+              <a href="tryouts.html">Register Interest →</a>
+            </div>
+          </article>
+
+          <article class="development-program">
+            <div class="development-program__visual development-program__visual--position">
+              <span>02</span>
+              <div><b>FW</b><b>MF</b><b>DF</b></div>
+            </div>
+            <div class="development-program__body">
+              <span>TECHNICAL + TACTICAL</span>
+              <h3>Position-Specific</h3>
+              <p>Training based on the actions and decisions players repeatedly face in their role.</p>
+              <ul>
+                <li>Forwards and finishing</li>
+                <li>Midfield scanning and receiving</li>
+                <li>Winger 1v1 and crossing</li>
+                <li>Defensive positioning</li>
+                <li>Fullback movement and support</li>
+              </ul>
+              <a href="contact.html">Ask About Your Position →</a>
+            </div>
+          </article>
+
+          <article class="development-program">
+            <div class="development-program__visual development-program__visual--performance">
+              <span>03</span>
+              <div class="development-program__bars"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="development-program__body">
+              <span>PERFORMANCE</span>
+              <h3>Athletic Development</h3>
+              <p>Age-appropriate movement work that supports football performance rather than replacing football training.</p>
+              <ul>
+                <li>Acceleration</li>
+                <li>Agility and change of direction</li>
+                <li>Balance and coordination</li>
+                <li>Movement quality</li>
+                <li>Functional strength</li>
+              </ul>
+              <a href="contact.html">Training Inquiry →</a>
+            </div>
+          </article>
+
+          <article class="development-program">
+            <div class="development-program__visual development-program__visual--group">
+              <span>04</span>
+              <div class="development-program__players"><b></b><b></b><b></b><b></b></div>
+            </div>
+            <div class="development-program__body">
+              <span>COMPETITIVE</span>
+              <h3>Small Groups</h3>
+              <p>High-repetition sessions that add opposition, pressure and decision-making to technical work.</p>
+              <ul>
+                <li>1v1 and 2v2 situations</li>
+                <li>Combination play</li>
+                <li>Scanning and decision-making</li>
+                <li>Transition moments</li>
+                <li>Competitive finishing</li>
+              </ul>
+              <a href="tryouts.html">Register Interest →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="development-session">
+      <div class="wrap development-session__grid">
+        <div>
+          <p class="eyebrow">SESSION DESIGN</p>
+          <h2>From technique to match action.</h2>
+          <p>A session should move from controlled execution toward realistic football decisions. The exact structure changes by player and objective, but the progression stays purposeful.</p>
+        </div>
+
+        <div class="development-session__timeline">
+          <article><span>01</span><strong>Activation</strong><small>Ball work + movement</small></article>
+          <article><span>02</span><strong>Technical Focus</strong><small>High-quality repetitions</small></article>
+          <article><span>03</span><strong>Decision-Making</strong><small>Add pressure + choices</small></article>
+          <article><span>04</span><strong>Game Application</strong><small>Match-realistic actions</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="development-positions">
+      <div class="wrap">
+        <div class="development-positions__heading">
+          <div>
+            <p class="eyebrow">POSITION-SPECIFIC WORK</p>
+            <h2>Different roles. Different demands.</h2>
+          </div>
+          <p>Players should understand not only how to execute a technique, but when and why it matters in their position.</p>
+        </div>
+
+        <div class="development-positions__grid">
+          <article><span>FW</span><h3>Forwards</h3><p>Movement, finishing, hold-up play, first touch and actions around goal.</p></article>
+          <article><span>WG</span><h3>Wingers</h3><p>1v1 attacking, acceleration, crossing, cutting inside and final-third decisions.</p></article>
+          <article><span>MF</span><h3>Midfielders</h3><p>Scanning, receiving under pressure, body shape, passing range and tempo control.</p></article>
+          <article><span>DF</span><h3>Defenders</h3><p>Positioning, duels, timing, recovery movement and playing out from the back.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="development-fit">
+      <div class="wrap development-fit__grid">
+        <div class="development-fit__copy">
+          <p class="eyebrow">WHO IS IT FOR?</p>
+          <h2>Training matched to the player.</h2>
+          <p>Development sessions can be adapted for different ages and playing levels. The goal is to challenge the player at the right level rather than use one identical session for everyone.</p>
+        </div>
+
+        <div class="development-fit__panel">
+          <div><span>BEGINNER</span><strong>Build confidence and core technique</strong></div>
+          <div><span>DEVELOPING</span><strong>Improve consistency and game understanding</strong></div>
+          <div><span>COMPETITIVE</span><strong>Refine position-specific performance</strong></div>
+          <div><span>ADVANCED</span><strong>Increase speed, detail and decision quality</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="club-cta">
+      <div class="wrap club-cta__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">READY TO TRAIN?</p>
+          <h2>Start your development pathway.</h2>
+          <p>Tell us the player's age, current level, position and development goals so we can direct the inquiry to the right training option.</p>
+        </div>
+        <div class="club-cta__actions">
+          <a class="btn btn--light" href="tryouts.html">Register Interest</a>
+          <a class="club-cta__link" href="contact.html">Contact the Club →</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap site-footer__grid">
-      <div class="footer-brand">
-        <img src="assets/logo.svg" alt="" width="64" height="76">
-        <div>
-          <strong>SARATOGA CONTINENTALS FC</strong>
-          <span>THE CONTINENTALS • EST. 2026</span>
+  <footer class="mega-footer">
+    <div class="wrap">
+      <div class="mega-footer__top">
+        <a class="mega-footer__brand" href="index.html" aria-label="Saratoga Continentals FC home">
+          <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+          <div>
+            <strong>SARATOGA</strong>
+            <span>CONTINENTALS FC</span>
+            <small>THE CONTINENTALS • EST. 2026</small>
+          </div>
+        </a>
+
+        <div class="mega-footer__social">
+          <span>FOLLOW THE CLUB</span>
+          <div>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+          </div>
         </div>
       </div>
-      <p>© <span id="year"></span> Saratoga Continentals FC. All rights reserved.</p>
-      <a href="#top">Back to top ↑</a>
+
+      <div class="mega-footer__links">
+        <div>
+          <span>CLUB</span>
+          <a href="club.html">About the Club</a>
+          <a href="teams.html">Teams</a>
+          <a href="schedule.html">Schedule</a>
+        </div>
+        <div>
+          <span>DEVELOPMENT</span>
+          <a href="development.html">Player Development</a>
+          <a href="tryouts.html">Join / Tryouts</a>
+          <a href="news.html">Club News</a>
+        </div>
+        <div>
+          <span>COMMUNITY</span>
+          <a href="sponsors.html">Partners</a>
+          <a href="contact.html">Contact</a>
+          <a href="mailto:info@saratogacontinentalsfc.com">Email the Club</a>
+        </div>
+        <div class="mega-footer__statement">
+          <span>SARATOGA, NEW YORK</span>
+          <strong>History. Pride.<br>Football.</strong>
+        </div>
+      </div>
+
+      <div class="mega-footer__bottom">
+        <p>© <span id="year"></span> Saratoga Continentals FC. All rights reserved.</p>
+        <span>saratogacontinentalsfc.com</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
