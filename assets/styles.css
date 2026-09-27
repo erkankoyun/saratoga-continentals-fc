@@ -4057,58 +4057,66 @@ button{font:inherit}
 
 /* ===== Social media icon links ===== */
 .mega-footer__social div{
+  display:flex;
   align-items:center;
+  gap:18px;
+  flex-wrap:wrap;
 }
 
 .social-link{
   display:inline-flex;
   align-items:center;
-  justify-content:center;
-  width:36px;
-  height:36px;
-  border-radius:50%;
-  transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+  justify-content:flex-start;
+  gap:9px;
+  width:auto;
+  height:auto;
+  padding:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  color:#fff!important;
+  font-size:12px!important;
+  font-weight:800!important;
+  letter-spacing:.01em;
+  text-transform:none;
+  line-height:1;
+  transition:opacity .2s ease, transform .2s ease;
 }
 
 .social-link svg{
   display:block;
-  width:20px;
-  height:20px;
+  width:32px;
+  height:32px;
+  padding:6px;
+  flex:0 0 32px;
+  box-sizing:border-box;
+  border-radius:50%;
   fill:#fff;
 }
 
 .social-link--facebook{
+  background:transparent;
+  box-shadow:none;
+}
+
+.social-link--facebook svg{
   background:#1877f2;
-  box-shadow:0 7px 18px rgba(24,119,242,.28);
+  box-shadow:0 5px 14px rgba(24,119,242,.28);
 }
 
 .social-link--facebook:hover,
 .social-link--facebook:focus-visible{
-  transform:translateY(-2px);
-  box-shadow:0 10px 24px rgba(24,119,242,.38);
-  filter:brightness(1.06);
+  color:#fff!important;
+  background:transparent;
+  box-shadow:none;
+  filter:none;
+  transform:translateY(-1px);
   outline:none;
 }
 
-
-/* ===== Social label beside Facebook icon ===== */
-.social-link--facebook{
-  width:auto;
-  height:36px;
-  padding:0 14px 0 10px;
-  gap:8px;
-  border-radius:999px;
-  color:#fff!important;
-  font-size:12px!important;
-  font-weight:800!important;
-  letter-spacing:.02em;
-  text-transform:none;
-}
-
-.social-link--facebook svg{
-  width:19px;
-  height:19px;
-  flex:0 0 auto;
+.social-link--facebook:hover svg,
+.social-link--facebook:focus-visible svg{
+  box-shadow:0 7px 18px rgba(24,119,242,.38);
 }
 
 .social-link__label{
@@ -4116,3 +4124,4 @@ button{font:inherit}
   line-height:1;
   white-space:nowrap;
 }
+
