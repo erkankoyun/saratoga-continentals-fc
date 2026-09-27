@@ -3821,6 +3821,7 @@ button{font:inherit}
   font-family:"Arial Narrow","Roboto Condensed","Helvetica Neue Condensed",Arial,sans-serif;
   text-transform:uppercase;
   font-stretch:condensed;
-  letter-spacing:-0.015em;
+  letter-spacing:.025em;
   font-weight:800;
+  font-size:14px;
 }
