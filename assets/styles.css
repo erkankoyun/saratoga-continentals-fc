@@ -4250,3 +4250,105 @@ button:focus-visible{
     -webkit-backdrop-filter:none;
   }
 }
+
+
+/* ===== Cinematic opening hero ===== */
+.opening-visual{
+  position:relative;
+  overflow:hidden;
+  background:#02060b;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.opening-visual__image{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:2033 / 774;
+  object-fit:cover;
+  object-position:center;
+}
+
+.opening-visual::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:28%;
+  pointer-events:none;
+  background:linear-gradient(to bottom,transparent,rgba(2,6,11,.46));
+}
+
+.opening-visual__scroll{
+  position:absolute;
+  z-index:2;
+  left:50%;
+  bottom:22px;
+  transform:translateX(-50%);
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  min-height:42px;
+  padding:0 16px;
+  border:1px solid rgba(255,255,255,.36);
+  border-radius:999px;
+  background:rgba(2,6,11,.72);
+  color:#fff;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.16em;
+  white-space:nowrap;
+  box-shadow:0 8px 28px rgba(0,0,0,.24);
+}
+
+.opening-visual__scroll strong{
+  font-size:17px;
+  line-height:1;
+}
+
+.opening-visual__scroll:hover{
+  background:rgba(215,25,32,.9);
+  border-color:rgba(255,255,255,.7);
+}
+
+#club-intro{
+  scroll-margin-top:110px;
+}
+
+@media (max-width:760px){
+  .opening-visual{
+    height:clamp(330px,58vh,520px);
+  }
+
+  .opening-visual__image{
+    width:100%;
+    height:100%;
+    aspect-ratio:auto;
+    object-fit:cover;
+    object-position:72% center;
+  }
+
+  .opening-visual::after{
+    height:35%;
+  }
+
+  .opening-visual__scroll{
+    bottom:16px;
+    min-height:40px;
+    font-size:9px;
+    letter-spacing:.14em;
+  }
+
+  #club-intro{
+    scroll-margin-top:96px;
+  }
+}
+
+@media (max-width:430px){
+  .opening-visual{
+    height:clamp(320px,55vh,470px);
+  }
+
+  .opening-visual__image{
+    object-position:76% center;
+  }
+}
