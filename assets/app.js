@@ -35,3 +35,35 @@ window.addEventListener('scroll', () => {
   if (!header) return;
   header.style.boxShadow = window.scrollY > 18 ? '0 10px 28px rgba(0,0,0,.16)' : 'none';
 }, { passive: true });
+
+
+const directForms = document.querySelectorAll('.club-contact-form, .player-interest-form');
+
+directForms.forEach(form => {
+  form.addEventListener('submit', event => {
+    const status = form.querySelector('.form-status');
+    const button = form.querySelector('button[type="submit"]');
+
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      form.reportValidity();
+      if (status) {
+        status.textContent = 'Please complete all required fields and check the consent box.';
+        status.classList.add('is-error');
+      }
+      return;
+    }
+
+    if (status) {
+      status.textContent = 'Sending your message…';
+      status.classList.remove('is-error');
+    }
+
+    if (button) {
+      button.disabled = true;
+      button.setAttribute('aria-busy', 'true');
+      button.dataset.originalText = button.textContent;
+      button.textContent = 'Sending…';
+    }
+  });
+});
