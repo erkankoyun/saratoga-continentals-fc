@@ -4236,3 +4236,17 @@ button:focus-visible{
     animation-iteration-count:1!important;
   }
 }
+
+
+/* ===== Performance polish: scroll state & mobile compositing ===== */
+.site-header.is-scrolled{
+  box-shadow:0 10px 28px rgba(0,0,0,.16);
+}
+
+@media (max-width:900px){
+  .site-header{
+    background:#07111f;
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+  }
+}
