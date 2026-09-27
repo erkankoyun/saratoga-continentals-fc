@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Join / Tryouts | Saratoga Continentals FC</title>
-  <meta name="description" content="Register your interest in playing, training, volunteering or supporting Saratoga Continentals FC.">
+  <meta name="description" content="Register player, training, volunteer or supporter interest with Saratoga Continentals FC.">
   <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Join / Tryouts | Saratoga Continentals FC">
+  <meta property="og:description" content="Register your interest in Saratoga Continentals FC.">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -34,7 +36,6 @@
         <span class="sr-only">Open navigation</span>
       </button>
 
-
       <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
         <a href="club.html">Club</a>
         <a href="teams.html">Teams</a>
@@ -42,56 +43,319 @@
         <a href="development.html">Player Development</a>
         <a href="news.html">News</a>
         <a href="contact.html">Contact</a>
-        <a class="nav-cta" href="tryouts.html">Join / Tryouts</a>
+        <a class="nav-cta nav-cta--current" href="tryouts.html">Join / Tryouts</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-glow hero-glow--one"></div>
-      <div class="hero-glow hero-glow--two"></div>
-      <div class="wrap hero__inner">
-        <div class="hero__copy">
+    <section class="tryouts-page-hero">
+      <div class="tryouts-page-hero__grid" aria-hidden="true"></div>
+      <div class="wrap tryouts-page-hero__inner">
+        <div class="tryouts-page-hero__copy">
           <p class="eyebrow">JOIN THE CLUB</p>
-          <h1>Be part of the first chapter.</h1>
-          <p class="hero__lead">Register your interest in playing, training, volunteering or supporting Saratoga Continentals FC.</p>
+          <h1>Be part of the<br><span>first chapter.</span></h1>
+          <p>Player interest, private training, volunteers and supporters are welcome as Saratoga Continentals FC builds its first competitive programs.</p>
+          <div class="tryouts-page-hero__actions">
+            <a class="btn btn--primary" href="#interest-form">Player Interest Form</a>
+            <a class="btn btn--hero-light" href="teams.html">Explore Teams</a>
+          </div>
         </div>
-        <div class="hero__crest-wrap" aria-hidden="true">
-          <div class="crest-halo"></div>
-          <img class="hero__crest" src="assets/logo.svg" alt="">
+
+        <div class="tryouts-page-hero__visual">
+          <div class="tryouts-page-hero__card">
+            <span>PLAYER INTEREST</span>
+            <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+            <strong>FORMING NOW</strong>
+            <small>SARATOGA • NEW YORK</small>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="tryouts">
-      <div class="wrap tryouts__inner">
-        <div><p class="eyebrow eyebrow--light">PLAYER INTEREST</p><h2>Interested in joining Saratoga Continentals FC?</h2><p>Tryout dates and player registration information will be announced as the club prepares for competition.</p></div>
-        <a class="btn btn--light" href="mailto:info@saratogacontinentalsfc.com?subject=Player%20Interest">Register Interest</a>
+    <section class="join-options">
+      <div class="wrap">
+        <div class="join-options__heading">
+          <div>
+            <p class="eyebrow">GET INVOLVED</p>
+            <h2>There is more than one way to join.</h2>
+          </div>
+          <p>Choose the path that best matches how you want to connect with Saratoga Continentals FC.</p>
+        </div>
+
+        <div class="join-options__grid">
+          <a href="#interest-form" class="join-option join-option--primary">
+            <span>01</span>
+            <h3>Player / Tryouts</h3>
+            <p>Register interest in future tryouts and competitive team opportunities.</p>
+            <strong>Register Interest →</strong>
+          </a>
+
+          <a href="development.html" class="join-option">
+            <span>02</span>
+            <h3>Private Training</h3>
+            <p>Explore 1-on-1, position-specific and small-group development programs.</p>
+            <strong>View Programs →</strong>
+          </a>
+
+          <a href="contact.html" class="join-option">
+            <span>03</span>
+            <h3>Volunteer / Staff</h3>
+            <p>Introduce yourself if you are interested in helping the club as it grows.</p>
+            <strong>Contact the Club →</strong>
+          </a>
+
+          <a href="sponsors.html" class="join-option">
+            <span>04</span>
+            <h3>Support / Partner</h3>
+            <p>Local businesses and organizations can explore founding partnership opportunities.</p>
+            <strong>Partnerships →</strong>
+          </a>
+        </div>
       </div>
     </section>
-    <section class="section">
+
+    <section class="interest-form-section" id="interest-form">
+      <div class="wrap interest-form-section__grid">
+        <div class="interest-form-section__intro">
+          <p class="eyebrow">PLAYER INTEREST</p>
+          <h2>Tell us about the player.</h2>
+          <p>Complete the information below. Because the site currently runs as a static GitHub Pages website, submitting this form opens your email application with the information addressed to the club.</p>
+
+          <div class="interest-form-section__notes">
+            <div><span>01</span><strong>Complete player details</strong></div>
+            <div><span>02</span><strong>Select position and level</strong></div>
+            <div><span>03</span><strong>Tell us what you are interested in</strong></div>
+            <div><span>04</span><strong>Send the inquiry to the club</strong></div>
+          </div>
+        </div>
+
+        <form class="player-interest-form" action="mailto:info@saratogacontinentalsfc.com" method="post" enctype="text/plain">
+          <div class="player-interest-form__head">
+            <span>SCFC PLAYER INTEREST</span>
+            <strong>2026–2027</strong>
+          </div>
+
+          <div class="form-section-label">PLAYER INFORMATION</div>
+
+          <div class="form-grid form-grid--2">
+            <label>
+              <span>Player First Name *</span>
+              <input type="text" name="Player First Name" autocomplete="given-name" required>
+            </label>
+            <label>
+              <span>Player Last Name *</span>
+              <input type="text" name="Player Last Name" autocomplete="family-name" required>
+            </label>
+          </div>
+
+          <div class="form-grid form-grid--2">
+            <label>
+              <span>Age *</span>
+              <input type="number" name="Age" min="4" max="70" required>
+            </label>
+            <label>
+              <span>Date of Birth</span>
+              <input type="date" name="Date of Birth">
+            </label>
+          </div>
+
+          <div class="form-grid form-grid--2">
+            <label>
+              <span>Primary Position *</span>
+              <select name="Primary Position" required>
+                <option value="">Select position</option>
+                <option>Goalkeeper</option>
+                <option>Center Back</option>
+                <option>Fullback / Wingback</option>
+                <option>Defensive Midfielder</option>
+                <option>Central Midfielder</option>
+                <option>Attacking Midfielder</option>
+                <option>Winger</option>
+                <option>Forward / Striker</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </label>
+            <label>
+              <span>Current Level *</span>
+              <select name="Current Level" required>
+                <option value="">Select level</option>
+                <option>Beginner</option>
+                <option>Recreational</option>
+                <option>Travel / Club</option>
+                <option>School Team</option>
+                <option>Competitive Adult</option>
+                <option>College</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-section-label">CONTACT INFORMATION</div>
+
+          <div class="form-grid form-grid--2">
+            <label>
+              <span>Parent / Player Name *</span>
+              <input type="text" name="Contact Name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>Email *</span>
+              <input type="email" name="Email" autocomplete="email" required>
+            </label>
+          </div>
+
+          <div class="form-grid form-grid--2">
+            <label>
+              <span>Phone</span>
+              <input type="tel" name="Phone" autocomplete="tel">
+            </label>
+            <label>
+              <span>City / Town</span>
+              <input type="text" name="City or Town" autocomplete="address-level2">
+            </label>
+          </div>
+
+          <div class="form-section-label">INTEREST</div>
+
+          <fieldset class="interest-checks">
+            <legend>What are you interested in?</legend>
+            <label><input type="checkbox" name="Interest - First Team"> <span>First Team / Tryouts</span></label>
+            <label><input type="checkbox" name="Interest - Youth"> <span>Youth Development</span></label>
+            <label><input type="checkbox" name="Interest - 1on1"> <span>1-on-1 Training</span></label>
+            <label><input type="checkbox" name="Interest - Position"> <span>Position-Specific Training</span></label>
+            <label><input type="checkbox" name="Interest - Small Group"> <span>Small Group Training</span></label>
+          </fieldset>
+
+          <label class="form-message">
+            <span>Playing Experience / Goals</span>
+            <textarea name="Playing Experience and Goals" rows="6" placeholder="Tell us about current or previous teams, experience, goals, and anything you want the club to know."></textarea>
+          </label>
+
+          <label class="form-consent">
+            <input type="checkbox" name="Consent" value="Yes" required>
+            <span>I confirm that the information provided is accurate and may be used by Saratoga Continentals FC to respond to this inquiry.</span>
+          </label>
+
+          <button class="btn btn--primary player-interest-form__submit" type="submit">Submit by Email</button>
+          <p class="player-interest-form__note">Submitting opens your default email application. A direct web-form submission service can be connected later without redesigning this page.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="tryout-process">
       <div class="wrap">
-        <div class="section-heading">
-          <div><p class="eyebrow">GET INVOLVED</p><h2>Players, volunteers and supporters are welcome.</h2></div>
-          <p class="section-heading__copy">Use the club email to introduce yourself and tell us how you would like to participate.</p>
+        <div class="tryout-process__heading">
+          <div>
+            <p class="eyebrow">WHAT HAPPENS NEXT?</p>
+            <h2>A simple player-interest process.</h2>
+          </div>
+          <p>Formal tryout dates are not yet published. This process lets the club begin organizing interested players.</p>
+        </div>
+
+        <div class="tryout-process__steps">
+          <article><span>01</span><strong>Register</strong><p>Send basic player and contact information.</p></article>
+          <article><span>02</span><strong>Review</strong><p>The club reviews age, level, position and stated goals.</p></article>
+          <article><span>03</span><strong>Contact</strong><p>Relevant players receive information when opportunities are available.</p></article>
+          <article><span>04</span><strong>Evaluation</strong><p>Tryout or training details are shared when evaluation sessions are scheduled.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tryout-faq">
+      <div class="wrap tryout-faq__grid">
+        <div>
+          <p class="eyebrow">QUICK INFORMATION</p>
+          <h2>Before you register.</h2>
+        </div>
+
+        <div class="tryout-faq__items">
+          <article>
+            <span>ARE TRYOUT DATES CONFIRMED?</span>
+            <p>No. Official dates will be posted once competition and team plans are finalized.</p>
+          </article>
+          <article>
+            <span>CAN YOUTH PLAYERS REGISTER INTEREST?</span>
+            <p>Yes. Youth interest can be submitted for future development programming.</p>
+          </article>
+          <article>
+            <span>CAN I ASK ABOUT PRIVATE TRAINING?</span>
+            <p>Yes. Select the relevant training option in the player-interest form or visit Player Development.</p>
+          </article>
+          <article>
+            <span>WHERE WILL ACTIVITIES TAKE PLACE?</span>
+            <p>Specific training and match locations will be announced as programs and schedules are confirmed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="club-cta">
+      <div class="wrap club-cta__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">QUESTIONS?</p>
+          <h2>Talk directly with the club.</h2>
+          <p>If you are unsure which option fits, contact Saratoga Continentals FC and tell us what you are looking for.</p>
+        </div>
+        <div class="club-cta__actions">
+          <a class="btn btn--light" href="mailto:info@saratogacontinentalsfc.com">Email the Club</a>
+          <a class="club-cta__link" href="contact.html">Contact Page →</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap site-footer__grid">
-      <div class="footer-brand">
-        <img src="assets/logo.svg" alt="" width="64" height="76">
-        <div>
-          <strong>SARATOGA CONTINENTALS FC</strong>
-          <span>THE CONTINENTALS • EST. 2026</span>
+  <footer class="mega-footer">
+    <div class="wrap">
+      <div class="mega-footer__top">
+        <a class="mega-footer__brand" href="index.html" aria-label="Saratoga Continentals FC home">
+          <img src="assets/logo.svg" alt="Saratoga Continentals FC crest">
+          <div>
+            <strong>SARATOGA</strong>
+            <span>CONTINENTALS FC</span>
+            <small>THE CONTINENTALS • EST. 2026</small>
+          </div>
+        </a>
+
+        <div class="mega-footer__social">
+          <span>FOLLOW THE CLUB</span>
+          <div>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+          </div>
         </div>
       </div>
-      <p>© <span id="year"></span> Saratoga Continentals FC. All rights reserved.</p>
-      <a href="#top">Back to top ↑</a>
+
+      <div class="mega-footer__links">
+        <div>
+          <span>CLUB</span>
+          <a href="club.html">About the Club</a>
+          <a href="teams.html">Teams</a>
+          <a href="schedule.html">Schedule</a>
+        </div>
+        <div>
+          <span>DEVELOPMENT</span>
+          <a href="development.html">Player Development</a>
+          <a href="tryouts.html">Join / Tryouts</a>
+          <a href="news.html">Club News</a>
+        </div>
+        <div>
+          <span>COMMUNITY</span>
+          <a href="sponsors.html">Partners</a>
+          <a href="contact.html">Contact</a>
+          <a href="mailto:info@saratogacontinentalsfc.com">Email the Club</a>
+        </div>
+        <div class="mega-footer__statement">
+          <span>SARATOGA, NEW YORK</span>
+          <strong>History. Pride.<br>Football.</strong>
+        </div>
+      </div>
+
+      <div class="mega-footer__bottom">
+        <p>© <span id="year"></span> Saratoga Continentals FC. All rights reserved.</p>
+        <span>saratogacontinentalsfc.com</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
