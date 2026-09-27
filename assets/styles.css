@@ -4181,13 +4181,12 @@ button{font:inherit}
 .social-link--youtube svg{
   width:32px;
   height:32px;
-  padding:6px;
+  padding:0;
   flex:0 0 32px;
   box-sizing:border-box;
-  border-radius:50%;
-  fill:#fff;
-  background:#ff0000;
-  box-shadow:0 5px 14px rgba(255,0,0,.24);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
 }
 
 .social-link--youtube:hover,
@@ -4202,9 +4201,8 @@ button{font:inherit}
 
 .social-link--youtube:hover svg,
 .social-link--youtube:focus-visible svg{
-  box-shadow:0 7px 18px rgba(255,0,0,.34);
+  filter:drop-shadow(0 5px 10px rgba(255,0,0,.28));
 }
-
 
 /* ===== Final launch polish ===== */
 .social-link--youtube svg{
@@ -4227,5 +4225,17 @@ button{font:inherit}
     transition-duration:.01ms!important;
     animation-duration:.01ms!important;
     animation-iteration-count:1!important;
+  }
+}
+
+
+/* ===== Accessibility: reduced motion ===== */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
   }
 }
