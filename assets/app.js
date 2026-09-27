@@ -31,10 +31,20 @@ const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
 
 const header = document.querySelector('.site-header');
-window.addEventListener('scroll', () => {
+let headerScrolled = false;
+
+function updateHeaderState() {
   if (!header) return;
-  header.style.boxShadow = window.scrollY > 18 ? '0 10px 28px rgba(0,0,0,.16)' : 'none';
-}, { passive: true });
+  const nextState = window.scrollY > 18;
+  if (nextState === headerScrolled) return;
+  headerScrolled = nextState;
+  header.classList.toggle('is-scrolled', nextState);
+}
+
+if (header) {
+  updateHeaderState();
+  window.addEventListener('scroll', updateHeaderState, { passive: true });
+}
 
 
 const directForms = document.querySelectorAll('.club-contact-form, .player-interest-form');
