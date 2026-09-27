@@ -4089,3 +4089,30 @@ button{font:inherit}
   filter:brightness(1.06);
   outline:none;
 }
+
+
+/* ===== Social label beside Facebook icon ===== */
+.social-link--facebook{
+  width:auto;
+  height:36px;
+  padding:0 14px 0 10px;
+  gap:8px;
+  border-radius:999px;
+  color:#fff!important;
+  font-size:12px!important;
+  font-weight:800!important;
+  letter-spacing:.02em;
+  text-transform:none;
+}
+
+.social-link--facebook svg{
+  width:19px;
+  height:19px;
+  flex:0 0 auto;
+}
+
+.social-link__label{
+  display:inline-block;
+  line-height:1;
+  white-space:nowrap;
+}
