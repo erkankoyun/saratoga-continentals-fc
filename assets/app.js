@@ -40,12 +40,13 @@ window.addEventListener('scroll', () => {
 const directForms = document.querySelectorAll('.club-contact-form, .player-interest-form');
 
 directForms.forEach(form => {
-  form.addEventListener('submit', event => {
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+
     const status = form.querySelector('.form-status');
     const button = form.querySelector('button[type="submit"]');
 
     if (!form.checkValidity()) {
-      event.preventDefault();
       form.reportValidity();
       if (status) {
         status.textContent = 'Please complete all required fields and check the consent box.';
@@ -53,6 +54,8 @@ directForms.forEach(form => {
       }
       return;
     }
+
+    const originalText = button ? button.textContent : '';
 
     if (status) {
       status.textContent = 'Sending your message…';
@@ -62,8 +65,33 @@ directForms.forEach(form => {
     if (button) {
       button.disabled = true;
       button.setAttribute('aria-busy', 'true');
-      button.dataset.originalText = button.textContent;
       button.textContent = 'Sending…';
+    }
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok || data.success === false) {
+        throw new Error(data.message || 'Submission failed');
+      }
+
+      window.location.href = 'thanks.html';
+    } catch (error) {
+      if (status) {
+        status.textContent = 'Your message could not be sent. Please try again or email info@saratogacontinentalsfc.com.';
+        status.classList.add('is-error');
+      }
+      if (button) {
+        button.disabled = false;
+        button.removeAttribute('aria-busy');
+        button.textContent = originalText;
+      }
     }
   });
 });
