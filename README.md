@@ -40,6 +40,8 @@ Forms currently use `mailto:` because GitHub Pages is static. A form-processing 
 - Sponsors / Partners
 - Contact
 
+Deployment workflow: `.github/workflows/pages.yml`
+
 ## Contact
 
 info@saratogacontinentalsfc.com
