@@ -134,8 +134,13 @@
           </div>
         </div>
 
-        <form class="player-interest-form" action="mailto:info@saratogacontinentalsfc.com" method="post" enctype="text/plain">
-          <div class="player-interest-form__head">
+        <form class="player-interest-form" action="https://formsubmit.co/info@saratogacontinentalsfc.com" method="POST">
+          
+          <input type="hidden" name="_subject" value="New SCFC Player Interest Submission">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://saratogacontinentalsfc.com/thanks.html">
+          <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="player-interest-form__head">
             <span>SCFC PLAYER INTEREST</span>
             <strong>2026–2027</strong>
           </div>
@@ -204,7 +209,7 @@
             </label>
             <label>
               <span>Email *</span>
-              <input type="email" name="Email" autocomplete="email" required>
+              <input type="email" name="email" autocomplete="email" required>
             </label>
           </div>
 
@@ -240,8 +245,8 @@
             <span>I confirm that the information provided is accurate and may be used by Saratoga Continentals FC to respond to this inquiry.</span>
           </label>
 
-          <button class="btn btn--primary player-interest-form__submit" type="submit">Submit by Email</button>
-          <p class="player-interest-form__note">Submitting opens your default email application. A direct web-form submission service can be connected later without redesigning this page.</p>
+          <button class="btn btn--primary player-interest-form__submit" type="submit">Submit Player Interest</button>
+          <p class="player-interest-form__note">Your submission will be sent directly to Saratoga Continentals FC. The first submission requires one-time email verification by the club.</p>
         </form>
       </div>
     </section>
