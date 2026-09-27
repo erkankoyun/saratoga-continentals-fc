@@ -4137,3 +4137,38 @@ button{font:inherit}
     align-items:flex-start;
   }
 }
+
+
+/* ===== Instagram social link ===== */
+.social-link--instagram{
+  background:transparent;
+  box-shadow:none;
+}
+
+.social-link--instagram svg{
+  width:32px;
+  height:32px;
+  padding:6px;
+  flex:0 0 32px;
+  box-sizing:border-box;
+  border-radius:50%;
+  fill:#fff;
+  background:
+    radial-gradient(circle at 30% 107%,#fdf497 0 5%,#fdf497 5% 10%,#fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow:0 5px 14px rgba(214,36,159,.25);
+}
+
+.social-link--instagram:hover,
+.social-link--instagram:focus-visible{
+  color:#fff!important;
+  background:transparent;
+  box-shadow:none;
+  filter:none;
+  transform:translateY(-1px);
+  outline:none;
+}
+
+.social-link--instagram:hover svg,
+.social-link--instagram:focus-visible svg{
+  box-shadow:0 7px 18px rgba(214,36,159,.35);
+}
