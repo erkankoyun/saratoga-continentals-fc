@@ -32,6 +32,7 @@ if (year) year.textContent = new Date().getFullYear();
 
 const header = document.querySelector('.site-header');
 let headerScrolled = false;
+let headerRaf = 0;
 
 function updateHeaderState() {
   if (!header) return;
@@ -41,9 +42,17 @@ function updateHeaderState() {
   header.classList.toggle('is-scrolled', nextState);
 }
 
+function queueHeaderStateUpdate() {
+  if (headerRaf) return;
+  headerRaf = window.requestAnimationFrame(() => {
+    headerRaf = 0;
+    updateHeaderState();
+  });
+}
+
 if (header) {
   updateHeaderState();
-  window.addEventListener('scroll', updateHeaderState, { passive: true });
+  window.addEventListener('scroll', queueHeaderStateUpdate, { passive: true });
 }
 
 
