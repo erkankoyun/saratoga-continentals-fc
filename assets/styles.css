@@ -3813,3 +3813,14 @@ button{font:inherit}
   }
   .home-hero__visual img{width:min(88%,300px)}
 }
+
+
+/* ===== Step 21-prep: primary nav typography ===== */
+.primary-nav,
+.primary-nav a{
+  font-family:"Arial Narrow","Roboto Condensed","Helvetica Neue Condensed",Arial,sans-serif;
+  text-transform:uppercase;
+  font-stretch:condensed;
+  letter-spacing:-0.015em;
+  font-weight:800;
+}
