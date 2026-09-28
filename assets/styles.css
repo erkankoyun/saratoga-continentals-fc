@@ -2779,6 +2779,23 @@ button{font:inherit}
 .development-principles__heading>p,.development-programs__heading>p,.development-positions__heading>p{
   max-width:480px;margin:0;color:#68727e;line-height:1.7
 }
+
+.development-programs__heading>p a,
+.development-principles__grid article p a{
+  font-weight:800;
+  text-decoration:underline;
+  text-decoration-thickness:1.5px;
+  text-underline-offset:3px
+}
+.development-programs__heading>p a:hover,
+.development-principles__grid article p a:hover{
+  text-decoration-thickness:2px
+}
+.development-programs__heading>p a:focus-visible,
+.development-principles__grid article p a:focus-visible{
+  outline:2px solid currentColor;
+  outline-offset:3px
+}
 .development-principles__grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:4px solid var(--red)}
 .development-principles__grid article{min-height:235px;padding:28px;border:1px solid var(--line);border-top:0}
 .development-principles__grid article+article{border-left:0}
